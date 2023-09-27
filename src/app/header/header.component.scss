@@ -1,18 +1,23 @@
 header {
-    display: flex;
-    padding: 37px 100px;
-    height: 36px;
-    justify-content: space-between;
-    align-items: center;
     background-color: #141D2F;
-    color: white;
-    font-size: 23px;
+    backdrop-filter: blur(32.5px);
+    padding: 37px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 
-    .button-menu {
+    .content {
+        height: 35px;
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 29px;
-    
+        justify-content: space-between;
+        align-items: center;
+
+        .menu img {
+            width: 30px;
+            height: 28px;
+        }
     }
+
+
 }
