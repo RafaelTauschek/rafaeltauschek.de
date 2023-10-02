@@ -1,0 +1,115 @@
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+
+    .portfolio-header {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        h2 {
+            font-weight: 700;
+            font-size: 90px;
+        }
+
+    }
+
+    .portfolio-description {
+        padding-left: 100px;
+        padding-bottom: 90px;
+    }
+
+    .portfolio-pojects {
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 34px;
+
+        .portfolio-top,
+        .portfolio-bottom  {
+            gap: 34px;
+            display: flex;
+        }
+
+        .project-1,
+        .project-2,
+        .project-3,
+        .project-4 {
+            border: 1px solid #00BEE8;
+            border-radius: 10px;
+            flex: 1;
+            height: 600px;
+            width: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 86px;
+    padding-top: 100px;
+
+    .github-btn {
+        font-weight: 400;
+        font-size: 23px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background-color: transparent;
+        border: 1px solid #00BEE8;
+        color: white;
+
+        &:hover {
+            border: 1px solid #1CE6B6;
+            background-color: #1CE6B6;
+        }
+    }
+
+    .livetest-btn {
+        font-weight: 400;
+        font-size: 23px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background-color: #4B47FF;
+        border: none;
+        color: white;
+
+        &:hover {
+            background-color: #00BEE8;
+        }
+    }
+
+    .card {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        gap: 27px;
+        border-radius: 10px;
+
+        h4 {
+            font-size: 32px;
+            color: #4B47FF;
+        }
+        p {
+            font-size: 23px;
+            font-weight: 400;
+            color: black;
+        }
+        h5 {
+            color: #00BEE8;
+            font-weight: 400;
+            font-size: 23px;
+        }
+    }
+}
