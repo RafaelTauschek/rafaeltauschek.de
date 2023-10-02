@@ -10,6 +10,9 @@ import { SkillSectionComponent } from './skill-section/skill-section.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { AboutMeSectionComponent } from './about-me-section/about-me-section.com
     SkillSectionComponent,
     PortfolioSectionComponent,
     ContactSectionComponent,
-    AboutMeSectionComponent
+    AboutMeSectionComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
