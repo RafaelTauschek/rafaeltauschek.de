@@ -1,0 +1,44 @@
+.about-me-section {
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr;
+    padding: 100px 100px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 90px;
+    }
+
+    .about-me-content {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+
+        .middle-section {
+            display: flex;
+            gap: 35px;
+            padding-left: 30px;
+        }
+
+        .bottom-section {
+            display: flex;
+            gap: 35px;
+            padding-left: 30px;
+        }
+    }
+
+    .about-me-right {
+        display: flex;
+        justify-content: center;
+        
+
+        img {
+            object-fit: contain;
+            width: 593px;
+            height: 647px;
+            flex-shrink: 0;
+        }
+    }
+}
