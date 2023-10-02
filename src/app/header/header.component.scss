@@ -1,23 +1,36 @@
 header {
-    background-color: #141D2F;
-    backdrop-filter: blur(32.5px);
-    padding: 37px 25px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    padding: 37px 100px;
+    display: flex;
+    justify-content: space-between;
 
-    .content {
-        height: 35px;
+
+    .menu {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        gap: 29px;
 
-        .menu img {
-            width: 30px;
-            height: 28px;
+        .menu-link {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
         }
     }
 
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 23px;
 
+        &:hover {
+            color: #00BEE8;
+        }
+    }
+}
+
+.active-link {
+    color: #00BEE8 !important;
+}
+
+.inactive-link path {
+    fill: transparent;
 }
