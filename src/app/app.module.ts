@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,6 +12,8 @@ import { AboutMeSectionComponent } from './about-me-section/about-me-section.com
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
+import { ImprintComponent } from './imprint/imprint.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -25,12 +26,14 @@ import { FormsModule }   from '@angular/forms';
     ContactSectionComponent,
     AboutMeSectionComponent,
     ContactFormComponent,
+    ImprintComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

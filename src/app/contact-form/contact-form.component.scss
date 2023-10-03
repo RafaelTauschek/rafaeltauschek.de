@@ -16,6 +16,7 @@ form {
         border-radius: 10px;
         border: 1px solid #4B47FF;
         background-color: #141D2F;
+        color: white;
         font-weight: 400;
         font-size: 16px;
         outline-style: none;
@@ -27,6 +28,7 @@ form {
 
     input {
         height: 20px;
+
 
         @media(max-width: 700px) {
             height: 10px;
