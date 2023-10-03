@@ -1,0 +1,33 @@
+footer {
+    height: 291px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 4px solid #00BEE8;
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-weight: 400;
+            font-size: 16px
+        }
+    }
+
+    .footer-middle p {
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+    .footer-right {
+        display: flex;
+        gap: 42px;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
