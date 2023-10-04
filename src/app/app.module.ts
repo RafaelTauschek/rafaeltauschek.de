@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule }   from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
 import { RouterModule } from '@angular/router';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { RouterModule } from '@angular/router';
     AboutMeSectionComponent,
     ContactFormComponent,
     ImprintComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,

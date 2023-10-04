@@ -2,7 +2,7 @@
     LOGO
     <div class="menu">
         <div class="menu-link">
-            <a [ngClass]="{'active-link': activeLink === 'link1'}" (click)="setActiveLink('link1')" href="#">About
+            <a [ngClass]="{'active-link': activeLink === 'link1'}" (click)="setActiveLink('link1')" href="#about-me">About
                 me</a>
             <svg [ngClass]="{'inactive-link': activeLink !== 'link1'}" xmlns="http://www.w3.org/2000/svg" width="59"
                 height="4" viewBox="0 0 59 4" fill="none">
@@ -13,7 +13,7 @@
         </div>
 
         <div class="menu-link">
-            <a [ngClass]="{'active-link': activeLink === 'link2'}" (click)="setActiveLink('link2')" href="#">Skills</a>
+            <a [ngClass]="{'active-link': activeLink === 'link2'}" (click)="setActiveLink('link2')" href="#skills">Skills</a>
             <svg [ngClass]="{'inactive-link': activeLink !== 'link2'}" xmlns="http://www.w3.org/2000/svg" width="59"
                 height="4" viewBox="0 0 59 4" fill="none">
                 <path
@@ -25,7 +25,7 @@
 
         <div class="menu-link">
             <a [ngClass]="{'active-link': activeLink === 'link3'}" (click)="setActiveLink('link3')"
-                href="#">Portfolio</a>
+                href="#portfolio">Portfolio</a>
             <svg [ngClass]="{'inactive-link': activeLink !== 'link3'}" xmlns="http://www.w3.org/2000/svg" width="59"
                 height="4" viewBox="0 0 59 4" fill="none">
                 <path
@@ -43,7 +43,7 @@
 <div class="responsive-menu" [ngClass]="{'display-none': !menuIsOpen}">
     <div class="responsive-links">
         <div class="responsive-menu-link">
-            <a [ngClass]="{'active-link': activeLink === 'link1'}" (click)="setActiveLink('link1')" href="#">About
+            <a [ngClass]="{'active-link': activeLink === 'link1'}" (click)="setActiveLink('link1')" href="#about-me">About
                 me</a>
             <svg [ngClass]="{'inactive-link': activeLink !== 'link1'}" xmlns="http://www.w3.org/2000/svg"
                 xmlns="http://www.w3.org/2000/svg" width="59" height="4" viewBox="0 0 59 4" fill="none">
@@ -54,7 +54,7 @@
         </div>
 
         <div class="responsive-menu-link">
-            <a [ngClass]="{'active-link': activeLink === 'link2'}" (click)="setActiveLink('link2')" href="#">Skills</a>
+            <a [ngClass]="{'active-link': activeLink === 'link2'}" (click)="setActiveLink('link2')" href="#skills">Skills</a>
             <svg [ngClass]="{'inactive-link': activeLink !== 'link2'}" xmlns="http://www.w3.org/2000/svg" width="59"
                 height="4" viewBox="0 0 59 4" fill="none">
                 <path
@@ -65,7 +65,7 @@
 
         <div class="responsive-menu-link">
             <a [ngClass]="{'active-link': activeLink === 'link3'}" (click)="setActiveLink('link3')"
-                href="#">Portfolio</a>
+                href="#portolio">Portfolio</a>
             <svg [ngClass]="{'inactive-link': activeLink !== 'link3'}" xmlns="http://www.w3.org/2000/svg" width="59"
                 height="4" viewBox="0 0 59 4" fill="none">
                 <path
@@ -75,7 +75,7 @@
         </div>
 
         <div class="responsive-menu-link">
-            <a [ngClass]="{'active-link': activeLink === 'link4'}" (click)="setActiveLink('link4')" href="#">Contact</a>
+            <a [ngClass]="{'active-link': activeLink === 'link4'}" (click)="setActiveLink('link4')" href="#contact">Contact</a>
             <svg [ngClass]="{'inactive-link': activeLink !== 'link4'}" xmlns="http://www.w3.org/2000/svg" width="59"
                 height="4" viewBox="0 0 59 4" fill="none">
                 <path
