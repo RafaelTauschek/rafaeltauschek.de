@@ -39,6 +39,10 @@ header {
         &:hover {
             color: #00BEE8;
         }
+
+        @media(max-width: 950px) {
+            font-size: 20px;
+        }
     }
 }
 
@@ -54,6 +58,10 @@ header {
 
     @media (max-width: 700px) {
         display: flex !important;
+
+        img {
+            height: 27px;
+        }
     }
 }
 
