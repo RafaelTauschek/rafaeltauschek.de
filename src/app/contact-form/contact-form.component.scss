@@ -1,74 +1,66 @@
 form {
     display: flex;
     flex-direction: column;
+    padding: 30px 25px;
+    gap: 12px;
+}
+
+input {
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #4B47FF;
+    background-color: #141D2F;
+    height: 10px;
+    color: white;
+
+    &:focus {
+        border: 1px solid #00BEE8;
+    }
+}
+
+
+textarea {
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #4B47FF;
+    background-color: #141D2F;
+    color: white;
+    height: 130px;
+
+    &:focus {
+        border: 1px solid #00BEE8;
+    }
+}
+
+
+.btn-container {
+    display: flex;
     justify-content: center;
-    gap: 35px;
-    padding-right: 100px;
-
-    @media(max-width: 700px) {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    input,
-    textarea {
-        padding: 15px 25px;
-        border-radius: 10px;
-        border: 1px solid #4B47FF;
-        background-color: #141D2F;
-        color: white;
-        font-weight: 400;
-        font-size: 16px;
-        outline-style: none;
-
-        &:hover {
-            border: 1px solid #00BEE8;
-        }
-    }
-
-    input {
-        height: 20px;
-
-
-        @media(max-width: 700px) {
-            height: 10px;
-        }
-    }
-
-    textarea {
-        height: 172px;
-
-        @media(max-width: 700px) {
-            height: 132px;
-        }
-    }
-
 
     button {
-        padding: 15px 30px;
-        font-weight: 400;
-        font-size: 23px;
-        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        background: #B6B6B6;
         border-radius: 10px;
-        width: 235px;
-        align-self: center;
-        color: white;
-        border: none;
-
-        @media(max-width: 700px) {
-            font-size: 16px;
-        }
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        background-color: #B6B6B6;
+        padding: 15px 30px;
     }
+}
+
+
+.user-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .checkbox {
     display: flex;
     align-items: center;
     gap: 8px;
+
+    input {
+        accent-color: #00BEE8;
+    }
 }
 
-.checkbox input {
-    background-color: #141D2F;
-    border: 1px solid #00BEE8;
-}
