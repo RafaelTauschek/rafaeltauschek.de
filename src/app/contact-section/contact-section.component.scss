@@ -50,3 +50,27 @@
         font-size: 16px;
     }
 }
+
+.contact-arrow {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    margin-top: -50px;
+}
+
+.arrow-up {
+    display: flex;
+    transform: rotate(180deg);
+    border-radius: 41px;
+    border: 2px solid white;
+    padding: 8px 8px 7px 7px;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
