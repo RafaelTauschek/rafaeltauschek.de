@@ -2,9 +2,17 @@
     display: flex;
     flex-direction: column;
 
+    @media(min-width: 1024px) {
+        flex-direction: row;
+    }
+
     p {
         font-size: 16px;
     }
+}
+
+.profile-image {
+    object-fit: contain;
 }
 
 .about-me-content {
@@ -13,9 +21,50 @@
     flex-direction: column;
     gap: 25px;
 
+    @media(min-width: 768px) {
+        padding: 75px 50px;
+        gap: 35px;
+    }
+
+    @media(min-width: 1024px) {
+        padding: 75px 75px;
+        order: -1;
+        width: 37%;
+    }
+
+    @media(min-width: 1280px) {
+        padding: 75px 100px;
+        width: 34%;
+    }
+
+    @media(min-width: 1440px) {
+        width: 32%;
+    }
+
+    @media(min-width: 1640px) {
+        width: 29%;
+    }
+
     h2 {
         font-size: 45px;
         font-weight: 700;
+        margin: 0;
+
+        @media(min-width: 500px) {
+            font-size: 54px;
+        }
+        @media(min-width: 768px) {
+            font-size: 64px;
+        }
+        @media(min-width: 1024px) {
+            font-size: 74px;
+        }
+        @media(min-width: 1280px) {
+            font-size: 84px;
+        }
+        @media(min-width: 1440px) {
+            font-size: 90px;
+        }
     }
 }
 
@@ -29,6 +78,7 @@
     display: flex;
     align-items: center;
     gap: 35px;
+
 
     img {
         object-fit: contain;
