@@ -4,7 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { IntoductionSectionComponent } from './intoduction-section/intoduction-section.component';
+import { IntroductionSectionComponent } from './introduction-section/introduction-section.component';
 import { SkillSectionComponent } from './skill-section/skill-section.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
@@ -21,7 +21,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    IntoductionSectionComponent,
+    IntroductionSectionComponent,
     SkillSectionComponent,
     PortfolioSectionComponent,
     ContactSectionComponent,
