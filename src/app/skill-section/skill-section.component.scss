@@ -2,18 +2,34 @@
 .skill-section {
     display: flex;
     flex-direction: column;
+
+    @media(min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 }
 
 .skill-header {
     display: flex;
     flex-direction: column;
     padding-left: 25px;
+    padding-top: 50px;
     gap: 25px;
     text-align: left;
+
+    @media(min-width: 1024px) {
+        justify-content: center;
+        gap: 45px
+    }
 
     p {
         margin: 0;
         padding-right: 25px;
+
+        @media(min-width: 1024px) {
+            padding-right: 75px;
+        }
     }
 
 }
@@ -26,20 +42,70 @@
     h2 {
         margin: 0;
         font-size: 45px;
+
+        @media(min-width: 500px) {
+            font-size: 54px;
+        }
+        @media(min-width: 768px) {
+            font-size: 64px;
+        }
+        @media(min-width: 1024px) {
+            font-size: 74px;
+        }
+        @media(min-width: 1280px) {
+            font-size: 84px;
+        }
+        @media(min-width: 1440px) {
+            font-size: 90px;
+        }
     }
 }
 
 .skill-content {
     display: flex;
     padding: 35px 25px;
-    justify-content: center;
+    justify-content: space-between;
     gap: 10px;
+
+    @media(min-width: 500px) {
+        justify-content: center;
+        gap: 35px;
+    }
+    @media(min-width: 768px) {
+        gap: 50px;
+    }
+    @media(min-width: 1024px) {
+        gap: 65px;
+        order: -1;
+    }
+    @media(min-width: 1280px) {
+        gap: 80px;
+    }
+    @media(min-width: 1440px) {
+        gap: 90px;
+    }
 }
 
 .skill-icon-container {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @media(min-width: 500px) {
+        gap: 25px;
+    }
+    @media(min-width: 768px) {
+        gap: 40px
+    }
+    @media(min-width: 1024px) {
+        gap: 55px
+    }
+    @media(min-width: 1280px) {
+        gap: 70px
+    }
+    @media(min-width: 1440px) {
+        gap: 85px
+    }
 }
 
 .skill-icons {
@@ -53,6 +119,10 @@
         font-size: 14px;
         font-weight: 700;
         margin: 0;
+
+        @media(min-width: 768px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -61,9 +131,21 @@
     height: 45px;
 }
 
-.skill-btn {
+.skill-btn-mobile {
     display: flex;
     justify-content: center;
+
+    @media(min-width: 1024px) {
+        display: none;
+    }
+}
+
+.skill-btn-desktop {
+    display: none;
+
+    @media(min-width: 1024px) {
+        display: flex;
+    }
 }
 
 button {
@@ -74,4 +156,17 @@ button {
     background-color: #00BEE8;
     color: white;
     border-radius: 10px;
+
+    @media(min-width: 700px) {
+        font-size: 18px;
+    }
+    @media(min-width: 900px) {
+        font-size: 20px;
+    }
+    @media(min-width: 1050px) {
+        font-size: 21px;
+    }
+    @media(min-width: 1200px) {
+        font-size: 23px;
+    }
 }
