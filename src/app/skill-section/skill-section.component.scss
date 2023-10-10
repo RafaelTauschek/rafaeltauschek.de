@@ -20,7 +20,8 @@
 
     @media(min-width: 1024px) {
         justify-content: center;
-        gap: 45px
+        gap: 45px;
+        padding: 0;
     }
 
     p {
@@ -77,6 +78,7 @@
     @media(min-width: 1024px) {
         gap: 65px;
         order: -1;
+        padding: 35px 75px;
     }
     @media(min-width: 1280px) {
         gap: 80px;

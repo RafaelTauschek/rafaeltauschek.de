@@ -28,9 +28,10 @@
     flex-direction: column;
     justify-content: center;
 
-    @media(min-width: 700px) {
+    @media(min-width: 768px) {
         flex-direction: row;
     }
+
 }
 
 .portfolio-description {
@@ -39,6 +40,13 @@
     flex-direction: column;
     text-align: center;
     gap: 15px;
+
+    @media(min-width: 768px) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
 
     h3 {
         color: #4B47FF;
@@ -99,23 +107,29 @@
     gap: 30px;
     margin-bottom: 50px;
 
-    @media(min-width: 900px) {
+}
 
-    }
+.portfolio-img-container {
+    display: flex;
+    justify-content: center;
+
+
 }
 
 .portfolio-img {
     object-fit: contain;
 }
 
-@media(min-width: 700px) {
+
+@media(min-width: 768px) {
     .portfolio-1,
     .portfolio-3,
     .portfolio-5 {
-        img  {
+        .portfolio-img-container {
             order: 1;
-            display: flex;
         }
-    
+    }
+    .portfolio-content {
+        padding: 35px 50px;
     }
 }
