@@ -2,10 +2,12 @@
 .skill-section {
     display: flex;
     flex-direction: column;
+    padding-bottom: 100px;
 
     @media(min-width: 1024px) {
         flex-direction: row;
-        
+        justify-content: space-between;
+        overflow: hidden;
     }
 
 }
@@ -24,6 +26,33 @@
         padding: 0;
     }
 
+    @media(min-width: 1080px) {
+        width: 39%;
+    }
+    @media(min-width: 1140px) {
+        width: 37%;
+    }
+    @media(min-width: 1200px) {
+        width: 35%;
+    }
+    @media(min-width: 1200px) {
+        width: 35%;
+    }
+    @media(min-width: 1425px) {
+        width: 32%;
+    }
+    @media(min-width: 1530px) {
+        width: 30%;
+    }
+    @media(min-width: 1650px) {
+        width: 28%;
+    }
+    @media(min-width: 1800px) {
+        width: 26%;
+    }
+    @media(min-width: 1800px) {
+        width: 24%;
+    }
 
     p {
         margin: 0;
@@ -33,7 +62,7 @@
             padding-right: 75px;
         }
         @media(min-width: 1280px) {
-            padding-right: 75px;
+            padding-right: 100px;
         }
     }
 
@@ -86,7 +115,7 @@
     }
     @media(min-width: 1280px) {
         gap: 80px;
-        padding: 35px 100px;
+        padding: 0px 0px 0px 100px;
     }
     @media(min-width: 1440px) {
         gap: 90px;
@@ -136,6 +165,16 @@
 .skill-icon {
     object-fit: contain;
     height: 45px;
+
+    @media(min-width: 1024px) {
+        height: 50px;
+    }
+    @media(min-width: 1280px) {
+        height: 55px;
+    }
+    @media(min-width: 1440px) {
+        height: 60px;
+    }
 }
 
 .skill-btn-mobile {

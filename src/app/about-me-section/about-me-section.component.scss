@@ -1,6 +1,7 @@
 .about-me-section {
     display: flex;
     flex-direction: column;
+    padding-bottom: 50px;
 
     @media(min-width: 1024px) {
         flex-direction: row;
@@ -27,7 +28,7 @@
     }
 
     @media(min-width: 1024px) {
-        padding: 75px 75px;
+        padding: 75px 0px 75px 75px;
         order: -1;
         width: 37%;
     }
@@ -53,15 +54,19 @@
         @media(min-width: 500px) {
             font-size: 54px;
         }
+
         @media(min-width: 768px) {
             font-size: 64px;
         }
+
         @media(min-width: 1024px) {
             font-size: 74px;
         }
+
         @media(min-width: 1280px) {
             font-size: 84px;
         }
+
         @media(min-width: 1440px) {
             font-size: 90px;
         }
@@ -87,3 +92,205 @@
     }
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.background-wave {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    padding-top: 330px;
+
+
+    @media(min-width: 380px) {
+        padding-top: 350px;
+    }
+
+    @media(min-width: 400px) {
+        padding-top: 370px;
+    }
+
+    @media(min-width: 420px) {
+        padding-top: 390px;
+    }
+
+    @media(min-width: 440px) {
+        padding-top: 410px;
+    }
+
+    @media(min-width: 460px) {
+        padding-top: 430px;
+    }
+
+    @media(min-width: 480px) {
+        padding-top: 470px;
+    }
+
+    @media(min-width: 500px) {
+        padding-top: 490px;
+    }
+
+    @media(min-width: 520px) {
+        padding-top: 510px;
+    }
+
+    @media(min-width: 540px) {
+        padding-top: 530px;
+    }
+
+    @media(min-width: 560px) {
+        padding-top: 540px;
+    }
+
+    @media(min-width: 580px) {
+        padding-top: 560px;
+    }
+
+    @media(min-width: 600px) {
+        padding-top: 580px;
+    }
+
+    @media(min-width: 620px) {
+        padding-top: 600px;
+    }
+
+    @media(min-width: 640px) {
+        padding-top: 620px;
+    }
+
+    @media(min-width: 660px) {
+        padding-top: 640px;
+    }
+
+    @media(min-width: 680px) {
+        padding-top: 660px;
+    }
+
+    @media(min-width: 700px) {
+        padding-top: 680px;
+    }
+
+    @media(min-width: 720px) {
+        padding-top: 700px;
+    }
+
+    @media (min-width: 760px) {
+        padding-top: 740px;
+    }
+
+    @media (min-width: 780px) {
+        padding-top: 760px;
+    }
+
+    @media (min-width: 800px) {
+        padding-top: 780px;
+    }
+
+    @media (min-width: 820px) {
+        padding-top: 800px;
+    }
+
+    @media (min-width: 840px) {
+        padding-top: 820px;
+    }
+
+    @media (min-width: 860px) {
+        padding-top: 840px;
+    }
+
+    @media (min-width: 880px) {
+        padding-top: 860px;
+    }
+
+    @media (min-width: 900px) {
+        padding-top: 880px;
+    }
+
+    @media (min-width: 920px) {
+        padding-top: 900px;
+    }
+
+    @media (min-width: 940px) {
+        padding-top: 920px;
+    }
+
+    @media (min-width: 960px) {
+        padding-top: 940px;
+    }
+
+    @media (min-width: 980px) {
+        padding-top: 960px;
+    }
+
+    @media (min-width: 1000px) {
+        padding-top: 980px;
+    }
+
+    @media (min-width: 1020px) {
+        padding-top: 1000px;
+    }
+
+    @media (min-width: 1024px) {
+        padding-top: 590px;
+    }
+
+    @media (min-width: 1050px) {
+        padding-top: 570px;
+    }
+
+    @media (min-width: 1100px) {
+        padding-top: 550px;
+    }
+
+    @media (min-width: 1150px) {
+        padding-top: 530px;
+    }
+
+    @media (min-width: 1200px) {
+        padding-top: 510px;
+    }
+
+    @media (min-width: 1350px) {
+        padding-top: 500px;
+    }
+
+    @media (min-width: 1450px) {
+        padding-top: 490px;
+    }
+
+    @media (min-width: 1500px) {
+        padding-top: 480px;
+    }
+
+    @media (min-width: 1550px) {
+        padding-top: 470px;
+    }
+
+    @media (min-width: 1650px) {
+        padding-top: 460px;
+    }
+
+    @media (min-width: 1700px) {
+        padding-top: 450px;
+    }
+
+    @media (min-width: 1750px) {
+        padding-top: 440px;
+    }
+
+    @media (min-width: 1850px) {
+        padding-top: 430px;
+    }
+
+    @media (min-width: 1900px) {
+        padding-top: 420px;
+    }
+
+    @media (min-width: 2000px) {
+        padding-top: 410px;
+    }
+}
