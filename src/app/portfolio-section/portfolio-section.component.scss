@@ -160,6 +160,24 @@
     }
 }
 
+.green-middle {
+    position: absolute;
+    object-fit: contain;
+    z-index: -1;
+    right: 0;
+    width: 74%;
+}
+
+
+.blue-middle {
+    position: absolute;
+    object-fit: contain;
+    z-index: -1;
+    left: 0;
+    width: 45%;
+}
+
+
 @media(min-width: 768px) {
 
     .portfolio-1,
