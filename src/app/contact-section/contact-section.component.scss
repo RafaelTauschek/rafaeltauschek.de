@@ -98,6 +98,16 @@
     padding-right: 25px;
     padding-bottom: 50px;
     margin-top: -50px;
+
+    @media(min-width: 768px) {
+        padding-right: 50px;
+    }
+    @media(min-width: 1024px) {
+        padding-right: 75px;
+    }
+    @media(min-width: 1280px) {
+        padding-right: 100px;
+    }
 }
 
 .arrow-up {
