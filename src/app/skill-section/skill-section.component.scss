@@ -202,6 +202,14 @@ button {
     background-color: #00BEE8;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #4B47FF;
+        transform: scale(1.2);
+        transform-origin: left;
+        transition: transform 0.25s ease-in-out;
+    }
 
     @media(min-width: 700px) {
         font-size: 18px;
