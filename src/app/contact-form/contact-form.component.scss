@@ -29,6 +29,16 @@ input {
     &:focus {
         border: 1px solid #00BEE8;
     }
+    
+    &:active {
+        border: 1px solid #00BEE8;
+        outline: #00BEE8;
+    }
+
+    &:hover {
+        border: 1px solid #00BEE8;
+        outline: #00BEE8;
+    }
 }
 
 
@@ -43,6 +53,17 @@ textarea {
 
     &:focus {
         border: 1px solid #00BEE8;
+        outline: #00BEE8;
+    }
+
+    &:active {
+        border: 1px solid #00BEE8;
+        outline: #00BEE8;
+    }
+
+    &:hover {
+        border: 1px solid #00BEE8;
+        outline: #00BEE8;
     }
 }
 

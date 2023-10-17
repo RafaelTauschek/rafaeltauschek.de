@@ -4,15 +4,39 @@ footer {
     align-items: center;
     border-top: 4px solid #00BEE8;
     padding: 50px 0px;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
+
+    .logo {
+        cursor: pointer;
+    }
 }
 
 .footer-icons {
     display: flex;
     gap: 40px;
     padding: 20px 0px;
+
+    a {
+        cursor: pointer;
+    
+        &:hover {
+            transform: scale(1.25);
+            transition: transform 0.1s ease-in-out;
+        }
+    }
 }
 
 p {
     font-size: 16px;
+}
+
+.imprint-link {
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+
+    &:hover {
+        border-image: linear-gradient(90deg, #00BEE8 70%, transparent 50%) 2;
+        border-image-slice: 1;
+    }
 }

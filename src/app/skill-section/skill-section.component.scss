@@ -165,6 +165,11 @@
 .skill-icon {
     object-fit: contain;
     height: 45px;
+    transition: transform 0.1s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
 
     @media(min-width: 1024px) {
         height: 50px;
@@ -176,6 +181,21 @@
         height: 60px;
     }
 }
+
+@keyframes jumping {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 
 .skill-btn-mobile {
     display: flex;
