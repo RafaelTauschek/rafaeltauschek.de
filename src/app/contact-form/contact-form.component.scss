@@ -20,6 +20,7 @@ form {
 input {
     padding: 15px 25px;
     font-size: 16px;
+    font-family: "Poppins", sans-serif;
     border-radius: 10px;
     border: 1px solid #4B47FF;
     background-color: #141D2F;
@@ -28,16 +29,19 @@ input {
 
     &:focus {
         border: 1px solid #00BEE8;
+        background-color: #141D2F;
     }
     
     &:active {
         border: 1px solid #00BEE8;
         outline: #00BEE8;
+        background-color: #141D2F;
     }
 
     &:hover {
         border: 1px solid #00BEE8;
         outline: #00BEE8;
+        background-color: #141D2F;
     }
 }
 
@@ -45,6 +49,7 @@ input {
 textarea {
     padding: 15px 25px;
     font-size: 16px;
+    font-family: "Poppins", sans-serif;
     border-radius: 10px;
     border: 1px solid #4B47FF;
     background-color: #141D2F;
@@ -54,16 +59,19 @@ textarea {
     &:focus {
         border: 1px solid #00BEE8;
         outline: #00BEE8;
+        background-color: #141D2F;
     }
 
     &:active {
         border: 1px solid #00BEE8;
         outline: #00BEE8;
+        background-color: #141D2F;
     }
 
     &:hover {
         border: 1px solid #00BEE8;
         outline: #00BEE8;
+        background-color: #141D2F;
     }
 }
 

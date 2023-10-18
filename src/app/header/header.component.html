@@ -1,7 +1,8 @@
 <header>
     <div class="mobile-menu">
         <a href="#"><img class="logo" src="./assets/img/Logo.svg"></a>
-        <a href="#"><img class="menu" src="./assets/img/icons/burger-menu.png"></a>
+        <a (click)="toggleMenu()" *ngIf="!menuIsOpen"><img class="menu" src="./assets/img/icons/burger-menu.png"></a>
+        <a (click)="toggleMenu()" *ngIf="menuIsOpen" class="close-btn"><img src="./assets/img/icons/close-menu.png"></a>
     </div>
 
     <div class="desktop-menu">
@@ -41,3 +42,12 @@
         </div>
     </div>
 </header>
+
+<div *ngIf="menuIsOpen" class="hidden-menu">
+    <div class="selection">
+        <a (click)="closeMenu()" href="#about-me">About me</a>
+        <a (click)="closeMenu()" href="#skills">Skills</a>
+        <a (click)="closeMenu()" href="#portfolio">Portfolio</a>
+        <a (click)="closeMenu()" href="#contact">Contact</a>
+    </div>
+</div>
