@@ -1,15 +1,30 @@
-
-
-<form (submit)="sendMail()" ngNativeValidate #myForm>
+<form (submit)="sendMail()" ngNativeValidate #myForm="ngForm">
     <div class="user-inputs">
-        <input placeholder="Your name" required type="text" name="name" #nameField>
-        <input placeholder="Your email" required type="text" name="email" #emailField>
-        <textarea placeholder="Your message" required name="message" #messageField></textarea>
+        <input placeholder="Your name" required type="text" name="name" [(ngModel)]="user.name" #nameField="ngModel">
+        <div class="error-message" *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)">
+            <div *ngIf="nameField.errors">Your name is required</div>
+        </div>
+
+        <input pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Your email" required type="text" name="email" [(ngModel)]="user.email" #emailField="ngModel">
+        <div class="error-message" *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)">
+            <div *ngIf="emailField.errors">Your email is required</div>
+        </div>
+
+        <textarea placeholder="Your message" required name="message" [(ngModel)]="user.message" #messageField="ngModel"></textarea>
+        <div class="error-message" *ngIf="messageField.invalid && (messageField.dirty || messageField.touched)">
+            <div *ngIf="messageField.errors">Your message is empty</div>
+        </div>
     </div>
+
     <div class="checkbox">
-        <input required type="checkbox">I've read the privacy policy and agree to the processing of my data as outlined.
+        <input required type="checkbox" name="privacyPolicy" [(ngModel)]="user.privacyPolicy" #privacyPolicyField="ngModel">
+        <div class="error-message" *ngIf="privacyPolicyField.invalid && (privacyPolicyField.dirty || privacyPolicyField.touched)">
+            <div *ngIf="privacyPolicyField.errors">Please accept the privacy policy.</div>
+        </div>
+    I've read the privacy policy and agree to the processing of my data as outlined.
     </div>
+
     <div class="btn-container">
-        <button #sendButton type="submit">Send message :)</button>
+        <button #sendButton type="submit" [disabled]="!myForm.form.valid">Send message :)</button>
     </div>
 </form>
