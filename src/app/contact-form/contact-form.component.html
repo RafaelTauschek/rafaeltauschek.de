@@ -1,30 +1,58 @@
 <form (submit)="sendMail()" ngNativeValidate #myForm="ngForm">
     <div class="user-inputs">
-        <input placeholder="Your name" required type="text" name="name" [(ngModel)]="user.name" #nameField="ngModel">
-        <div class="error-message" *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)">
-            <div *ngIf="nameField.errors">Your name is required</div>
-        </div>
+        <label>
+            <input placeholder="Your name" required type="text" name="name" [(ngModel)]="user.name"
+                #nameField="ngModel">
+            <div class="user-input-images">
+                <img *ngIf="nameField.valid && (nameField.dirty || nameField.touched)"
+                    src="./assets/img/icons/check.png">
+                <img *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)"
+                    src="./assets/img/icons/error.png">
+            </div>
+            <div class="error-message" *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)">
+                <div *ngIf="nameField.errors">Your name is required</div>
+            </div>
+        </label>
 
-        <input pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Your email" required type="text" name="email" [(ngModel)]="user.email" #emailField="ngModel">
-        <div class="error-message" *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)">
-            <div *ngIf="emailField.errors">Your email is required</div>
-        </div>
-
-        <textarea placeholder="Your message" required name="message" [(ngModel)]="user.message" #messageField="ngModel"></textarea>
-        <div class="error-message" *ngIf="messageField.invalid && (messageField.dirty || messageField.touched)">
-            <div *ngIf="messageField.errors">Your message is empty</div>
-        </div>
+        <label>
+            <input pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="Your email" required type="text" name="email"
+                [(ngModel)]="user.email" #emailField="ngModel">
+            <div class="user-input-images">
+                <img *ngIf="emailField.valid && (emailField.dirty || emailField.touched)"
+                    src="./assets/img/icons/check.png">
+                <img *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)"
+                    src="./assets/img/icons/error.png">
+            </div>
+            <div class="error-message" *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)">
+                <div *ngIf="emailField.errors">Your email is required</div>
+            </div>
+        </label>
+        <label>
+            <textarea placeholder="Your message" required name="message" [(ngModel)]="user.message"
+                #messageField="ngModel"></textarea>
+            <div class="user-input-images">
+                <img *ngIf="messageField.valid && (messageField.dirty || messageField.touched)"
+                    src="./assets/img/icons/check.png">
+                <img *ngIf="messageField.invalid && (messageField.dirty || messageField.touched)"
+                    src="./assets/img/icons/error.png">
+            </div>
+            <div class="error-message" *ngIf="messageField.invalid && (messageField.dirty || messageField.touched)">
+                <div *ngIf="messageField.errors">Your message is empty</div>
+            </div>
+        </label>
     </div>
 
     <div class="checkbox">
-        <input required type="checkbox" name="privacyPolicy" [(ngModel)]="user.privacyPolicy" #privacyPolicyField="ngModel">
-        <div class="error-message" *ngIf="privacyPolicyField.invalid && (privacyPolicyField.dirty || privacyPolicyField.touched)">
+        <input required type="checkbox" name="privacyPolicy" [(ngModel)]="user.privacyPolicy"
+            #privacyPolicyField="ngModel">
+        <div class="error-message"
+            *ngIf="privacyPolicyField.invalid && (privacyPolicyField.dirty || privacyPolicyField.touched)">
             <div *ngIf="privacyPolicyField.errors">Please accept the privacy policy.</div>
         </div>
-    I've read the privacy policy and agree to the processing of my data as outlined.
+        I've read the privacy policy and agree to the processing of my data as outlined.
     </div>
 
     <div class="btn-container">
-        <button #sendButton type="submit" [disabled]="!myForm.form.valid">Send message :)</button>
+        <button #sendButton type="submit" [class.send-btn-active]="myForm.form.valid" [disabled]="!myForm.form.valid">Send message :)</button>
     </div>
 </form>

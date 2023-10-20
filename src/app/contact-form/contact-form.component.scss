@@ -83,16 +83,34 @@ textarea {
     button {
         border-radius: 10px;
         box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: none;
         background-color: #B6B6B6;
         padding: 15px 30px;
     }
 }
 
 
+.send-btn-active {
+    background-color: #00BEE8 !important;
+}
+
 .user-inputs {
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+
+.user-input-images {
+    position: absolute; 
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+.error-message {
+    color: #E61C40;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .checkbox {
@@ -105,3 +123,7 @@ textarea {
     }
 }
 
+
+label {
+    position: relative;
+}
