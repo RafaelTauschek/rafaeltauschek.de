@@ -31,7 +31,7 @@ input {
         border: 1px solid #00BEE8;
         background-color: #141D2F;
     }
-    
+
     &:active {
         border: 1px solid #00BEE8;
         outline: #00BEE8;
@@ -86,6 +86,7 @@ textarea {
         border: none;
         background-color: #B6B6B6;
         padding: 15px 30px;
+        cursor: pointer;
     }
 }
 
@@ -103,9 +104,9 @@ textarea {
 .user-input-images {
     height: 25px;
     width: 25px;
-    position: absolute; 
-    right: 20px; 
-    top: 10px; 
+    position: absolute;
+    right: 20px;
+    top: 10px;
 }
 
 .error-message {
@@ -114,6 +115,20 @@ textarea {
     margin-top: 10px;
 }
 
+.error-message-privacy {
+    color: transparent;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.error-message-active {
+    color: #E61C40;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
 .checkbox {
     display: flex;
     align-items: center;
@@ -121,6 +136,9 @@ textarea {
 
     input {
         accent-color: #00BEE8;
+        height: 24px;
+        width: 24px;
+        opacity: 0;
     }
 }
 
@@ -134,9 +152,21 @@ label {
 
 
 .error-border {
-   border: 1px solid #E61C40;
+    border: 1px solid #E61C40;
 }
 
 .correct-border {
     border: 1px solid #70E61C;
+}
+
+.checkbox a {
+    color: #4B47FF;
+    cursor: pointer;
+}
+
+.custom-checkbox-image {
+    position: absolute;
+    top: 0;
+    height: 24px;
+    width: 24px;
 }

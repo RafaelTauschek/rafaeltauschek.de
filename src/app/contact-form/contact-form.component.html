@@ -1,7 +1,7 @@
 <form (submit)="sendMail()" ngNativeValidate #myForm="ngForm">
     <div class="user-inputs">
         <label>
-            <input placeholder="Your name" required type="text" name="name" [(ngModel)]="user.name" #nameField="ngModel"
+            <input minlength="4" placeholder="Your name" required type="text" name="name" [(ngModel)]="user.name" #nameField="ngModel"
                 [ngClass]="{
                     'error-border': nameField.invalid && (nameField.dirty || nameField.touched),
                     'correct-border': nameField.valid && (nameField.dirty || nameField.touched)
@@ -34,7 +34,7 @@
             </div>
         </label>
         <label>
-            <textarea placeholder="Your message" required name="message" [(ngModel)]="user.message"
+            <textarea minlength="10" placeholder="Your message" required name="message" [(ngModel)]="user.message"
                 #messageField="ngModel" [(ngModel)]="user.message" #emailField="ngModel" [ngClass]="{
                     'error-border': messageField.invalid && (messageField.dirty || messageField.touched),
                     'correct-border': messageField.valid && (messageField.dirty || messageField.touched)
@@ -51,14 +51,22 @@
         </label>
     </div>
 
-    <div class="checkbox">
-        <input required type="checkbox" name="privacyPolicy" [(ngModel)]="user.privacyPolicy"
-            #privacyPolicyField="ngModel">
-        <div class="error-message"
-            *ngIf="privacyPolicyField.invalid && (privacyPolicyField.dirty || privacyPolicyField.touched)">
-            <div *ngIf="privacyPolicyField.errors">Please accept the privacy policy.</div>
+    <div class="checkbox-input">
+        <div class="checkbox">
+            <label class="custom-checkbox">
+                <input required type="checkbox" name="privacyPolicy" [(ngModel)]="user.privacyPolicy"
+                #privacyPolicyField="ngModel">
+                <div class="custom-checkbox-image">
+                    <img *ngIf="user.privacyPolicy" src="./assets/img/icons/checkbox-checked.svg" alt="Checked">
+                    <img *ngIf="!user.privacyPolicy" src="./assets/img/icons/checkbox-unchecked.svg" alt="Unchecked">
+                </div>
+            </label>
+            <span>I've read the <a>privacy policy</a> and agree to the processing of my data as outlined.</span>
         </div>
-        I've read the privacy policy and agree to the processing of my data as outlined.
+        <div class="error-message-privacy"
+            [ngClass]="{ 'error-message-active': privacyPolicyField.invalid && (privacyPolicyField.dirty || privacyPolicyField.touched) }">
+            Please accept the privacy policy.
+        </div>
     </div>
 
     <div class="btn-container">
