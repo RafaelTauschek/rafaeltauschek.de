@@ -1,4 +1,4 @@
-<form (submit)="sendMail()" ngNativeValidate #myForm="ngForm">
+<form (submit)="sendMail()" method="post" ngNativeValidate #myForm="ngForm">
     <div class="user-inputs">
         <label>
             <input minlength="4" placeholder="Your name" required type="text" name="name" [(ngModel)]="user.name" #nameField="ngModel"

@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Action } from 'rxjs/internal/scheduler/Action';
 
 @Component({
   selector: 'app-contact-form',
@@ -21,40 +22,28 @@ export class ContactFormComponent {
   @ViewChild('sendButton') sendButton!: ElementRef;
 
   async sendMail() {
+    console.log('Sending mail', this.myForm);
 
-    console.log(this.user.name, this.user.email, this.user.message, this.user.privacyPolicy);
-    
 
-    // console.log('Sending mail', this.myForm);
-    // let nameField =  this.nameField.nativeElement
-    // let messageField = this.messageField.nativeElement
-    // let emailField = this.emailField.nativeElement
-    // let sendButton = this.sendButton.nativeElement
-    // nameField.disabled = true;
-    // messageField.disabled = true;
-    // emailField.disabled = true;
-    // sendButton.disabled = true;
-    //ANIMATION anzeigen
+    // Animation anzeigen
 
-    // let fd = new FormData();
-    // fd.append('name', nameField.value);
-    // fd.append('message', messageField.value);
-    // await fetch('https://rafael-tauschek.de/send_mail/send_mail.php',
-    //  {
-    //   method: 'POST',
-    //   body: fd
-    //  }
-    // ),
+    let fd = new FormData();
+    fd.append('name', this.user.name);
+    fd.append('message', this.user.message);
 
-    // //Text anzeigen, Nachricht gesendet!
-    // nameField.disabled = false;
-    // messageField.disabled = false;
-    // emailField.disabled = false;
-    // sendButton.disabled = false;
+    // SENDEN
+    await fetch('https://rafael-tauschek.de/send_mail/send_mail.php',
+     {
+      method: 'POST',
+      body: fd
+     }
+    );
+
+    // Text anzeigen: Nachricht gesendet
+     this.sendButton.nativeElement.disabled = true;
+     
+
   }
-
-
-
 }
 
 
