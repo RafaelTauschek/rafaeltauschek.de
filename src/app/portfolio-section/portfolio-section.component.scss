@@ -48,7 +48,14 @@
     @media(min-width: 768px) {
         flex-direction: row;
     }
+}
 
+.portfolio-content {
+    margin-top: -50px;
+
+    @media(min-width: 1024px) {
+        margin-top: 0px;
+    }
 }
 
 .portfolio-description {
@@ -124,8 +131,11 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 50px;
 
+
+    @media(min-width: 1024px) {
+        margin-bottom: 50px;
+    }
 }
 
 .portfolio-img-container {
@@ -155,7 +165,11 @@
 .portfolio-content-section {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 50px;
+
+    @media(min-width: 1024px) {
+        gap: 100px;
+    }
 
     @media(min-width: 1280px) {
         gap: 0px;
@@ -168,6 +182,33 @@
     z-index: -1;
     right: 0;
     width: 74%;
+
+    @media(min-width: 400px) {
+        width: 55%;
+    }
+
+    @media(min-width: 500px) {
+        width: 45%;
+        margin-top: 70px;
+    }
+    @media(min-width: 600px) {
+        margin-top: 80px;
+    }
+    @media(min-width: 700px) {
+        width: 40%;
+    }
+    @media(min-width: 768px) {
+        margin-top: 0;
+    }
+    @media(min-width: 800px) {
+        width: 35%;
+    }
+    @media(min-width: 900px) {
+        width: 30%;
+    }
+    @media(min-width: 1024px) {
+        width: 25%;
+    }
 }
 
 
@@ -176,7 +217,42 @@
     object-fit: contain;
     z-index: -1;
     left: 0;
+    margin-top: 2150px;
     width: 45%;
+
+    @media(min-width: 400px) {
+        margin-top: 1940px;
+        width: 50%;
+    }
+
+    @media(min-width: 500px) {
+        margin-top: 1770px;
+        width: 45%;
+    }
+    @media(min-width: 600px) {
+        margin-top: 1670px;
+    }
+    @media(min-width: 700px) {
+        width: 40%;
+    }
+    @media(min-width: 768px) {
+        margin-top: 790px;
+    }
+    @media(min-width: 800px) {
+        width: 35%;
+        margin-top: 850px;
+    }
+    @media(min-width: 900px) {
+        width: 30%;
+        margin-top: 900px;
+    }
+    @media(min-width: 1024px) {
+        width: 25%;
+    }
+    @media(min-width: 1280px) {
+        margin-top: 1200px;
+    }
+    
 }
 
 
