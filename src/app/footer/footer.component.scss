@@ -26,15 +26,6 @@ footer {
     }
 }
 
-.logo-container a {
-    cursor: pointer;
-    text-decoration: none;
-
-
-    &:visited {
-        color: white;
-    }
-}
 
 .footer-icons {
     display: flex;
@@ -42,7 +33,6 @@ footer {
     padding: 20px 0px;
 
     a {
-
         &:hover {
             transform: scale(1.25);
             transition: transform 0.1s ease-in-out;
@@ -65,11 +55,16 @@ p {
 .imprint-link-desktop {
     border-bottom: 3px solid transparent;
     display: none;
+    text-decoration: none;
     cursor: pointer;
 
     &:hover {
         border-image: linear-gradient(90deg, #00BEE8 50%, transparent 50%) 2;
         border-image-slice: 1;
+    }
+
+    &:visited {
+        color: white;
     }
 
     @media(min-width: 1024px) {
@@ -80,10 +75,15 @@ p {
 .imprint-link-mobile {
     border-bottom: 3px solid transparent;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
         border-image: linear-gradient(90deg, #00BEE8 70%, transparent 50%) 2;
         border-image-slice: 1;
+    }
+
+    &:visited {
+        color: white;
     }
 
     @media(min-width: 1024px) {
