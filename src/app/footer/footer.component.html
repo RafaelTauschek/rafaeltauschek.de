@@ -1,10 +1,13 @@
 <footer>
-    <img class="logo" src="./assets/img/Logo.svg">
+    <div class="logo-container">
+        <img class="logo" src="./assets/img/Logo.svg">
+        <a class="imprint-link-desktop" [routerLink]="'/imprint'" routerLinkActive="true">Impressum</a>
+    </div>
     <p>© Rafael Tauschek 2023</p>
     <div class="footer-icons">
-        <a href="#"><img src="./assets/img/icons/github.svg"></a>
-        <a href="#"><img src="./assets/img/icons/email.svg"></a>
+        <a target="_blank" href="https://github.com/RafaelTauschek"><img src="./assets/img/icons/github.svg"></a>
+        <a href="mailto:tauschek.rafael@gmail.com"><img src="./assets/img/icons/email.svg"></a>
         <a href="#"><img src="./assets/img/icons/linkedin.svg"></a>
     </div>
-    <a class="imprint-link" outerLink="/imprint" routerLinkActive="true">Impressum</a>
+    <a class="imprint-link-mobile" [routerLink]="'/imprint'" routerLinkActive="true">Impressum</a>
 </footer>

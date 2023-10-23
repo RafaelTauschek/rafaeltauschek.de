@@ -7,8 +7,32 @@ footer {
     position: relative;
     z-index: 2;
 
+    @media(min-width: 768px) {
+        padding: 50px 50px;
+    }
+
+    @media(min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 75px;
+    }
+
+    @media(min-width: 1280px) {
+        padding: 50px 100px;
+    }
+
     .logo {
         cursor: pointer;
+    }
+}
+
+.logo-container a {
+    cursor: pointer;
+    text-decoration: none;
+
+
+    &:visited {
+        color: white;
     }
 }
 
@@ -18,8 +42,7 @@ footer {
     padding: 20px 0px;
 
     a {
-        cursor: pointer;
-    
+
         &:hover {
             transform: scale(1.25);
             transition: transform 0.1s ease-in-out;
@@ -29,14 +52,41 @@ footer {
 
 p {
     font-size: 16px;
+
+    @media(min-width: 500px) {
+        font-size: 18px
+    }
+
+    @media(min-width: 1024px) {
+        font-size: 23px;
+    }
 }
 
-.imprint-link {
+.imprint-link-desktop {
+    border-bottom: 3px solid transparent;
+    display: none;
+    cursor: pointer;
+
+    &:hover {
+        border-image: linear-gradient(90deg, #00BEE8 50%, transparent 50%) 2;
+        border-image-slice: 1;
+    }
+
+    @media(min-width: 1024px) {
+        display: flex;
+    }
+}
+
+.imprint-link-mobile {
     border-bottom: 3px solid transparent;
     cursor: pointer;
 
     &:hover {
         border-image: linear-gradient(90deg, #00BEE8 70%, transparent 50%) 2;
         border-image-slice: 1;
+    }
+
+    @media(min-width: 1024px) {
+        display: none;
     }
 }

@@ -15,6 +15,7 @@ import { FormsModule }   from '@angular/forms';
 import { ImprintComponent } from './imprint/imprint.component';
 import { RouterModule } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     ContactFormComponent,
     ImprintComponent,
     MainPageComponent,
+    PrivacyComponent,
   ],
   imports: [
     BrowserModule,

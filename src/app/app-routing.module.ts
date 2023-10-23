@@ -6,10 +6,12 @@ import { SkillSectionComponent } from './skill-section/skill-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 const routes: Routes = [
-  {path: '', component: MainPageComponent },
-  {path: 'imprint', component: ImprintComponent },
+  { path: '', component: MainPageComponent },
+  { path: 'imprint', component: ImprintComponent },
+  { path: 'privacy', component: PrivacyComponent }
 ];
 
 @NgModule({
