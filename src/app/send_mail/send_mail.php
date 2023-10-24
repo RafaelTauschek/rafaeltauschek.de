@@ -2,7 +2,7 @@
 
 ########### CONFIG ###############
 
-$recipient = 'tauschek.rafael@gmail.com';
+$recipient = 'contact@rafael-tauschek.de';
 $redirect = '';
 
 ########### CONFIG END ###########
