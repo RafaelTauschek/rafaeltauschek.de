@@ -37,19 +37,16 @@ export class ContactFormComponent {
 
     
     // SENDEN
-    await fetch('https://rafael-tauschek.de/send_mail/send_mail.php',
-     {
-      method: 'POST',
-      body: fd
-     }
-    );
+    // await fetch('https://rafael-tauschek.de/send_mail/send_mail.php',
+    //  {
+    //   method: 'POST',
+    //   body: fd
+    //  }
+    // );
 
     // Text anzeigen: Nachricht gesendet
      this.sendButton.nativeElement.disabled = true;
-
-
-     //Show Popup message
-
+     
      const dialogRef = this.dialog.open(ContactPopupComponent, {
       data: { message: 'Email sent successfully!' }
      });
@@ -57,6 +54,12 @@ export class ContactFormComponent {
      setTimeout(() => {
       dialogRef.close();
      }, 3000);
+     this.sendButton.nativeElement.disabled = false;
+
+     this.user.email = '';
+     this.user.message = '';
+     this.user.name = '';
+
   }
 }
 

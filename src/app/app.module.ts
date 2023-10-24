@@ -18,6 +18,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { ContactPopupComponent } from './contact-popup/contact-popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     RouterModule,
     BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
