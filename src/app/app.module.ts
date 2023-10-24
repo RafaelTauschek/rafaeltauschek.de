@@ -16,6 +16,8 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { RouterModule } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { ContactPopupComponent } from './contact-popup/contact-popup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     ImprintComponent,
     MainPageComponent,
     PrivacyComponent,
+    ContactPopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,6 +41,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     ReactiveFormsModule,
     FormsModule,
     RouterModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
