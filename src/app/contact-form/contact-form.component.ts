@@ -1,4 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact-form',
@@ -14,42 +16,33 @@ export class ContactFormComponent {
     privacyPolicy: false
   };
 
-  @ViewChild('myForm') myForm!: ElementRef;
+  @ViewChild('myForm') myForm!: NgForm;
   @ViewChild('nameField') nameField!: ElementRef;
   @ViewChild('messageField') messageField!: ElementRef;
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
 
+
+
   async sendMail() {
-    console.log('Sending mail', this.myForm);
-
-
-    // Animation anzeigen
-
     let fd = new FormData();
     fd.append('name', this.user.name);
     fd.append('message', this.user.message);
     fd.append('email', this.user.email)
-
-
-    // SENDEN
-    // await fetch('https://rafael-tauschek.de/send_mail/send_mail.php',
-    //  {
-    //   method: 'POST',
-    //   body: fd
-    //  }
-    // );
-
-    // Text anzeigen: Nachricht gesendet
     this.sendButton.nativeElement.disabled = true;
 
+    await fetch('https://rafael-tauschek.de/send_mail/send_mail.php',
+      {
+        method: 'POST',
+        body: fd
+      }
+    );
 
     setTimeout(() => {
-
+      this.myForm.resetForm();
+      this.sendButton.nativeElement.disabled = false;
     }, 3000);
-
-    this.sendButton.nativeElement.disabled = false;
   }
 }
 
