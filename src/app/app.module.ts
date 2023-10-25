@@ -16,7 +16,6 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { RouterModule } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
 import { PrivacyComponent } from './privacy/privacy.component';
-import { ContactPopupComponent } from './contact-popup/contact-popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -35,7 +34,6 @@ import { MatDialogModule } from '@angular/material/dialog';
     ImprintComponent,
     MainPageComponent,
     PrivacyComponent,
-    ContactPopupComponent,
   ],
   imports: [
     BrowserModule,

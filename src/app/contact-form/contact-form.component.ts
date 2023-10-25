@@ -1,6 +1,4 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
-import { ContactPopupComponent } from '../contact-popup/contact-popup.component';
-import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-contact-form',
@@ -22,7 +20,6 @@ export class ContactFormComponent {
   @ViewChild('emailField') emailField!: ElementRef;
   @ViewChild('sendButton') sendButton!: ElementRef;
 
-  constructor(private dialog: MatDialog) {}
 
   async sendMail() {
     console.log('Sending mail', this.myForm);
@@ -35,7 +32,7 @@ export class ContactFormComponent {
     fd.append('message', this.user.message);
     fd.append('email', this.user.email)
 
-    
+
     // SENDEN
     // await fetch('https://rafael-tauschek.de/send_mail/send_mail.php',
     //  {
@@ -45,21 +42,14 @@ export class ContactFormComponent {
     // );
 
     // Text anzeigen: Nachricht gesendet
-     this.sendButton.nativeElement.disabled = true;
-     
-     const dialogRef = this.dialog.open(ContactPopupComponent, {
-      data: { message: 'Email sent successfully!' }
-     });
+    this.sendButton.nativeElement.disabled = true;
 
-     setTimeout(() => {
-      dialogRef.close();
-     }, 3000);
-     this.sendButton.nativeElement.disabled = false;
 
-     this.user.email = '';
-     this.user.message = '';
-     this.user.name = '';
+    setTimeout(() => {
 
+    }, 3000);
+
+    this.sendButton.nativeElement.disabled = false;
   }
 }
 

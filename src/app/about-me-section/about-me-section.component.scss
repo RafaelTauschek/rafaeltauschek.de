@@ -16,6 +16,11 @@
 
 .profile-image {
     object-fit: contain;
+    height: 500px;
+
+    @media(min-width: 1024px) {
+        margin-left: 150px;
+    }
 }
 
 .about-me-content {
