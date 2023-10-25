@@ -26,6 +26,22 @@
 
     h2 {
         font-size: 47px;
+
+        @media(min-width: 500px) {
+            font-size: 54px;
+        }
+        @media(min-width: 768px) {
+            font-size: 64px;
+        }
+        @media(min-width: 1024px) {
+            font-size: 74px;
+        }
+        @media(min-width: 1280px) {
+            font-size: 84px;
+        }
+        @media(min-width: 1440px) {
+            font-size: 90px;
+        }
     }
 
     p {

@@ -1,12 +1,12 @@
 <header>
     <div class="mobile-menu">
-        <a href="#"><img class="logo" src="./assets/img/Logo.svg"></a>
+        <a class="logo" href="#"><span>Rafael</span></a>
         <a (click)="toggleMenu()" *ngIf="!menuIsOpen"><img class="menu" src="./assets/img/icons/burger-menu.png"></a>
         <a (click)="toggleMenu()" *ngIf="menuIsOpen" class="close-btn"><img src="./assets/img/icons/close-menu.png"></a>
     </div>
 
     <div class="desktop-menu">
-        <a href="#"><img class="logo" src="./assets/img/Logo.svg"></a>
+        <a class="logo" href="#"><span>Rafael</span></a>
         <div class="menu">
             <div class="menu-link">
                 <a [ngClass]="{'active-link': activeLink === 'link1'}" (click)="setActiveLink('link1')"
