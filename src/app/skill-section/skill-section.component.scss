@@ -170,10 +170,10 @@
 .skill-icon {
     object-fit: contain;
     height: 45px;
-    transition: transform 0.1s ease;
+    
 
     &:hover {
-        transform: translateY(-10px);
+        animation: jumping 0.5s ease;
     }
 
     @media(min-width: 1024px) {
@@ -192,7 +192,15 @@
         transform: translateY(0px);
     }
 
+    25% {
+        transform: translateY(-10px);
+    }
+
     50% {
+        transform: translateY(0px);
+    }
+
+    75% {
         transform: translateY(-10px);
     }
 
