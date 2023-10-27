@@ -4,6 +4,9 @@
     padding-bottom: 50px;
     padding-top: 150px;
     margin-top: -150px;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
 
     @media(min-width: 1024px) {
         flex-direction: row;
@@ -123,6 +126,8 @@
     position: absolute;
     z-index: -1;
     padding-top: 330px;
+    max-width: 1920px;
+    margin: 0 auto;
 
 
     @media(min-width: 380px) {
