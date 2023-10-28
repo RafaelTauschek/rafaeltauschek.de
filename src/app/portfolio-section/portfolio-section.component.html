@@ -5,8 +5,14 @@
                 <path d="M0 2L50 2" stroke="#4B47FF" stroke-width="4" stroke-linecap="round" />
             </svg>
             <h2>Portfolio</h2>
+            <div class="green-shadow">
+                <img src="./assets/img/background-colors/green-middle.png">
+            </div>
         </div>
         <p>This page is a sample of my work - please feel free to try them out.</p>
+    </div>
+    <div class="blue-shadow">
+        <img src="./assets/img/background-colors/blue-middle.png">
     </div>
     <div class="portfolio-content-section">
         <div class="portfolio-item" *ngFor="let project of projects; let i = index" [ngClass]="{'even-item': i % 2 === 0, 'odd-item': i % 2 !== 0}">

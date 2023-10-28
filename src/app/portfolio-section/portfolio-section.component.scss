@@ -264,3 +264,63 @@
         }
     }
 }
+
+.green-shadow {
+    position: absolute;
+    z-index: -999;
+    right: 0;
+    margin-top: 100px;
+
+    img {
+        object-fit: contain;
+        width: 100px;
+
+        @media(min-width: 500px) {
+            width: 150px;
+        }
+
+        @media(min-width: 768px) {
+            width: 200px;
+        }
+
+        @media(min-width: 1024px) {
+            width: 250px;
+        }
+        @media(min-width: 1280px) {
+            width: 300px;
+        }
+        @media(min-width: 1960px) {
+            width: 350px;
+        }
+    }
+}
+
+.blue-shadow {
+    position: absolute;
+    left: 0;
+    margin-top: 300px;
+    z-index: -999;
+
+    img {
+        object-fit: contain;
+        width: 150px;
+
+        @media(min-width: 500px) {
+            width: 150px;
+        }
+
+        @media(min-width: 768px) {
+            width: 200px;
+        }
+
+        @media(min-width: 1024px) {
+            width: 250px;
+        }
+        @media(min-width: 1280px) {
+            width: 300px;
+        }
+        @media(min-width: 1960px) {
+            width: 350px;
+        }
+    }
+}
