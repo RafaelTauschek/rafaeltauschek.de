@@ -87,6 +87,8 @@ textarea {
         border: none;
         background-color: #B6B6B6;
         padding: 15px 30px;
+        pointer-events: all;
+        z-index: 1;
         cursor: pointer;
     }
 }
@@ -170,4 +172,6 @@ label {
     top: 0;
     height: 24px;
     width: 24px;
+    cursor: pointer;
 }
+
