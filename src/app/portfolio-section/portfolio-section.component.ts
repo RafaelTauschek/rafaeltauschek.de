@@ -24,7 +24,9 @@ export class PortfolioSectionComponent {
       githubLink: 'https://github.com/RafaelTauschek/El-Pollo-Loco',
       livetestLink: 'https://el-pollo-loco.rafael-tauschek.de'
     }
-  ]
+  ];
 
-
+  redirectToLink(link: string) {
+    window.open(link, '_blank')
+  }
 }

@@ -9,95 +9,21 @@
         <p>This page is a sample of my work - please feel free to try them out.</p>
     </div>
     <div class="portfolio-content-section">
-        <div class="portfolio-1 portfolio">
-            <div class="portfolio-img-container">
-                <img class="portfolio-img-mobile" src="./assets/img/portfolio/join-small.png">
-                <img class="portfolio-img-desktop" src="./assets/img/portfolio/join-big.png">
+        <div class="portfolio-item" *ngFor="let project of projects">
+            <div class="project-img-container">
+                <img class="project-img" [src]="project.img">
             </div>
-            <div class="portfolio-content">
+            <div class="project-content">
                 <div class="portfolio-description">
-                    <h3>Join</h3>
-                    <h4>JavaScript | HTML | CSS | GroupProject</h4>
-                    <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop
-                        functions,
-                        assign users and categories.</p>
+                    <span class="project-title">{{ project.title }}</span>
+                    <span class="project-technologies">{{ project.technologies.join(' | ')}}</span>
+                    <span class="project-description">{{ project.description }}</span>
                 </div>
-                <div class="portfolio-btn">
-                    <button onclick="window.open('https://join.rafael-tauschek.de', '_blank')" class="livetest-btn">Live test</button>
-                    <button onclick="window.open('https://github.com/RafaelTauschek/Join', '_blank')" class="github-btn">Github</button>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-2 portfolio">
-            <div class="portfolio-img-container">
-                <img class="portfolio-img-mobile" src="./assets/img/portfolio/el-pollo-loco-small.png">
-                <img class="portfolio-img-desktop" src="./assets/img/portfolio/el-pollo-loco-big.png">
-            </div>
-            <div class="portfolio-content">
-                <div class="portfolio-description">
-                    <h3>El Pollo Loco</h3>
-                    <h4>JavaScript | HTML | CSS</h4>
-                    <p>Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco
-                        salsa to fight against the crazy hen.</p>
-                </div>
-                <div class="portfolio-btn">
-                    <button onclick="window.open('https://el-pollo-loco.rafael-tauschek.de', '_blank')" class="livetest-btn">Live test</button>
-                    <button onclick="window.open('https://github.com/RafaelTauschek/El-Pollo-Loco', '_blank')" class="github-btn">Github</button>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-3 portfolio">
-            <div class="portfolio-img-container">
-                <img class="portfolio-img-mobile" src="./assets/img/portfolio/pokedex.png">
-                <img class="portfolio-img-desktop" src="./assets/img/portfolio/el-pollo-loco-big.png">
-            </div>
-            <div class="portfolio-content">
-                <div class="portfolio-description">
-                    <h3>In Progress</h3>
-                    <h4>Technologies used</h4>
-                    <p>Here comes a text from a sample work. Lorem ipsum.</p>
-                </div>
-                <div class="portfolio-btn">
-                    <button class="livetest-btn">Live test</button>
-                    <button class="github-btn">Github</button>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-4 portfolio">
-            <div class="portfolio-img-container">
-                <img class="portfolio-img-mobile" src="./assets/img/portfolio/pokedex.png">
-                <img class="portfolio-img-desktop" src="./assets/img/portfolio/el-pollo-loco-big.png">
-            </div>
-            <div class="portfolio-content">
-                <div class="portfolio-description">
-                    <h3>In Progress</h3>
-                    <h4>Technologies used</h4>
-                    <p>Here comes a text from a sample work. Lorem ipsum.</p>
-                </div>
-                <div class="portfolio-btn">
-                    <button class="livetest-btn">Live test</button>
-                    <button class="github-btn">Github</button>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio-5 portfolio">
-            <div class="portfolio-img-container">
-                <img class="portfolio-img-mobile" src="./assets/img/portfolio/pokedex.png">
-                <img class="portfolio-img-desktop" src="./assets/img/portfolio/el-pollo-loco-big.png">
-            </div>
-            <div class="portfolio-content">
-                <div class="portfolio-description">
-                    <h3>In Progress</h3>
-                    <h4>Technologies used</h4>
-                    <p>Here comes a text from a sample work. Lorem ipsum.</p>
-                </div>
-                <div class="portfolio-btn">
-                    <button class="livetest-btn">Live test</button>
-                    <button class="github-btn">Github</button>
+                <div class="project-btn-container">
+                    <button class="livetest-btn" (click)="redirectToLink(project.livetestLink)">Live test</button>
+                    <button class="github-btn" (click)="redirectToLink(project.githubLink)">Github</button>
                 </div>
             </div>
         </div>
     </div>
-    <img class="green-middle" src="./assets/img/background-colors/green-middle.png">
-    <img class="blue-middle" src="./assets/img/background-colors/blue-middle.png">
 </div>
