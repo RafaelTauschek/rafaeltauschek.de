@@ -5,6 +5,7 @@
     padding-top: 100px;
     margin-top: -100px;
     margin: 0 auto;
+    max-width: 1920px;
 }
 
 .portfolio-header {
@@ -94,9 +95,12 @@
 
     @media(min-width: 1024px) {
         padding: 0px 75px;
+        gap: 75px;
     }
+
     @media(min-width: 1024px) {
-        padding: 0px 100px;
+        padding: 100px 100px;
+        gap: 100px;
     }
 }
 
@@ -116,6 +120,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media(min-width: 1024px) {
+        width: 70%;
+    }
+
+    @media(min-width: 1280px) {
+        width: 30%;
+    }
 }
 
 .portfolio-description {
@@ -127,7 +139,8 @@
     @media(min-width: 768px) {
         padding: 0px 50px;
     }
-    @media(min-width: 768px) {
+
+    @media(min-width: 1024px) {
         padding: 0px;
     }
 }
@@ -158,6 +171,20 @@
     display: flex;
     justify-content: space-between;
     padding: 35px 25px;
+
+    @media(min-width: 350px) {
+        justify-content: center;
+        gap: 35px;
+    }
+
+    @media(min-width: 500px) {
+        gap: 50px;
+    }
+
+    @media(min-width: 1024px) {
+        padding: 35px 0px;
+        gap: 86px;
+    }
 }
 
 .project-img-container {
@@ -171,7 +198,6 @@
 
     @media(min-width: 1024px) {
         padding: 0;
-        justify-content: unset;
     }
 }
 
@@ -179,4 +205,52 @@
     object-fit: contain;
     width: 80%;
     max-width: 100%;
+}
+
+
+@media(min-width: 1024px) {
+    .even-item {
+        .project-content {
+            order: 1;
+        }
+
+        .project-title {
+            text-align: left;
+        }
+
+        .project-technologies {
+            text-align: left;
+        }
+
+        .project-description {
+            text-align: left;
+        }
+
+        .project-btn-container {
+            justify-content: flex-start;
+        }
+
+    }
+
+    .odd-item {
+        .project-content {
+            order: -1;
+        }
+
+        .project-title {
+            text-align: right;
+        }
+
+        .project-technologies {
+            text-align: right;
+        }
+
+        .project-description {
+            text-align: right;
+        }
+
+        .project-btn-container {
+            justify-content: flex-end;
+        }
+    }
 }

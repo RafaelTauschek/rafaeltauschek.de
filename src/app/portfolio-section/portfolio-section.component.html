@@ -9,7 +9,7 @@
         <p>This page is a sample of my work - please feel free to try them out.</p>
     </div>
     <div class="portfolio-content-section">
-        <div class="portfolio-item" *ngFor="let project of projects">
+        <div class="portfolio-item" *ngFor="let project of projects; let i = index" [ngClass]="{'even-item': i % 2 === 0, 'odd-item': i % 2 !== 0}">
             <div class="project-img-container">
                 <img class="project-img" [src]="project.img">
             </div>
