@@ -1,5 +1,7 @@
 html {
   scroll-behavior: smooth;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 body {
@@ -7,12 +9,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  overflow-x: hidden !important;
   background-color: #141D2F;
   font-family: 'Poppins', sans-serif;
   line-height: 120%;
   width: 100%;
-  max-width: 100%;
   font-style: normal;
   color: white;
 }
